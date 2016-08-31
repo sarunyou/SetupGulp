@@ -2,7 +2,21 @@ doctype html
 head
   meta(charset="utf-8")
   title i love you
-  link(rel="stylesheet", href="./css/style.css")
+  link(rel="stylesheet", href="build/css/style.css")
+  script(type="text/javascript" src="./js/controller.js")
 body  
-  .box
+  .container
+    - var menuTexts = ['Music', 'Tech', 'Books', 'Games'];
+    ul
+      each menuText, index in menuTexts  
+        li(class="element-#{index}") #{menuText} 
+          ul.drop-menu
+            li hi
+            li hello
+            li Hey
+            li THis
+            li is
+            li spatan
+    
+    
           
